@@ -1,0 +1,105 @@
+body {
+  padding: 20px;
+  background-color: #495057;
+}
+#root {
+  width: 400px;
+  margin: 0;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 400px;
+}
+.label__form {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.contact__input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.contact__input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.button__submit {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.button__submit:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.button__submit:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.button__submit:focus,
+.button__submit:hover {
+  text-decoration: none;
+}
+.button__submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.button__submit:not(:disabled):not(.disabled).active:focus,
+.button__submit:not(:disabled):not(.disabled):active:focus,
+.show > .button__submit.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.button__submit:not(:disabled):not(.disabled).active,
+.button__submit:not(:disabled):not(.disabled):active,
+.show > .button__submit.dropdown-toggle {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+.button__submit:not(:disabled):not(.disabled).active,
+.button__submit:not(:disabled):not(.disabled):active {
+  background-image: none;
+}
+.button__submit.disabled,
+.button__submit:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.button__submit.disabled,
+.button__submit:disabled {
+  opacity: 0.65;
+}
